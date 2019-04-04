@@ -15,7 +15,7 @@
 
 VIRTUAL_ENV_DISABLE_PROMPT=true
 
-BULLETTRAIN_PROMPT_CHAR="\$"
+BULLETTRAIN_PROMPT_CHAR="➜"
 BULLETTRAIN_PROMPT_ROOT=true
 
 BULLETTRAIN_STATUS_BG=black
@@ -195,7 +195,7 @@ prompt_dir() {
   if [[ $BULLETTRAIN_DIR_EXTENDED == false ]] then
     prompt_segment $BULLETTRAIN_DIR_BG $BULLETTRAIN_DIR_FG '%1~'
   else
-    prompt_segment $BULLETTRAIN_DIR_BG $BULLETTRAIN_DIR_FG '%4(c:...:)%3c'
+    prompt_segment $BULLETTRAIN_DIR_BG $BULLETTRAIN_DIR_FG '%99c'
   fi
 }
 
